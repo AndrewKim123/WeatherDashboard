@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherDashboard</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    
+</head>
+<body>
+    <header class="hero">
+        <h1 class="app-title">Weather Dashboard</h1>
+    </header>
+
+    <main class="flex-row justify-space-between">
+       <!--Search for a City-->
+        <div class="col-12 col-md-4">
+        <div class="card">
+            <h3 class="card-header text-uppercase">Search for a City:</h3>
+            <form id="user-form" class="card-body">
+                <label class="form-label" for="city">City</label>
+                <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+
+       <!--Today's Weather-->
+<div class="col-12 col-md-8 card">
+    <h2 class="subtitle">Enter a City.</h2>
+    <h3 class="subtitle">Temp:</h3>
+    <h3 class="subtitle">Wind:</h3>
+    <h3 class="subtitle">Humidity:</h3>
+    <h3 class="subtitle">UV Index:</h3>
+</div>
+
+       <!--5-Day Forecast-->
+    <div class="col-12 col-md-8">
+        <h2 class="subtitle">5-Day Forecast: <span id="repo-search-term"></span></h2>
+        <div id="weather-container" class="list-group"></div>
+    </div>
+    </main>
+    <script src="./assets/homepage.js"></script>
+</body>
+</html>
